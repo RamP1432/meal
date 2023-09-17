@@ -1,0 +1,214 @@
+*{
+    margin:0px 0px;
+    padding:0px 0px;
+}
+#navbar
+{
+    display:flex;
+    position:relative;
+}
+#logo
+{
+    margin:0px 5px;
+
+}
+#logo img
+{
+    margin:5px 5px;
+    height:80px;
+    width:90px;
+}
+
+#navbar ul
+{
+    display:flex;
+    align-items:center;
+}
+
+#navbar::before
+{
+    content:"";
+    position:absolute;
+    background-color: black;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.95;
+}
+
+#navbar ul li
+{
+    list-style:none;
+    margin:35px 12px;
+    
+}
+#navbar ul li a
+{
+   text-decoration:none; 
+   color:rgb(14, 1, 1);
+   margin:12px 12px;
+   padding:3px 22px;
+   border-radius:20px;
+   color:white;
+
+}
+
+#navbar ul li a:hover
+{
+    color:black;
+    background-color:white;
+}
+
+
+#home
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center; 
+    margin:65px 233px;
+    height:200px;
+    text-align:center;
+}
+#home::before
+{
+    content:"";
+    position:absolute;
+    background:url('../bgi3.jpeg') no-repeat center center/cover;
+    width:100%;
+    height:80%;
+    z-index:-1;
+    opacity:0.85;
+}
+
+#home h1
+{
+    font-size:3.8rem;
+
+}
+#home p
+{
+    color:white;
+    font-size:1.2rem;
+}
+.btn
+{
+    border:2px solid white;
+    background-color:rgb(178, 127, 225);
+    padding:10px 25px;
+    margin:20px;
+    border-radius:10px;
+    font-size:1.2rem;
+    cursor:pointer;
+}
+#service-container
+{
+    margin-top:200px;
+}
+.services
+{
+    display:flex;
+}
+.services .box
+{
+    border:2px solid rgb(102, 75, 75);
+    margin:12px;
+    padding:10px;
+    border-radius:23px;
+    background-color:rgb(242, 232, 232);
+
+}
+.services  .box img
+{
+    display:block;
+    height:100px;
+    margin:auto;
+
+
+}
+.partner-section
+{
+    height: 350px;
+    margin-top:25px;
+}
+.partner-section::before
+{
+    content:"";
+    position:absolute;
+    background:url('../bgi.jpeg');
+    width:100%;
+    height:40%;
+    z-index:-1;
+    opacity:0.5;
+}
+
+.partners
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.partner-name
+{
+    margin:10px 12px;
+}
+
+.partner-name img
+{
+    height:100px;
+}
+
+.contact-us
+{
+ 
+}
+.contact-us::before
+{
+   content:"";
+   position:absolute;
+   background:url('../contact.jpeg') no-repeat center center/cover;
+   height:65%;
+   width:100%;
+   z-index:-1;
+   opacity:0.3;
+}
+.contact
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-bottom: 34px;
+}
+.contact form
+{
+    width:35%;
+}
+.contact input,
+.contact textarea
+{
+    width:100%;
+    padding:0.5rem;
+    border-radius:10px;
+    font-size:1.0rem;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    margin-top:25px;
+}
+.center
+{
+    text-align:center;
+}
+.primary
+{
+    text-align:center;
+    font-size:2.8rem;
+}
+.secondary
+{
+    font-size:1.8rem;
+    text-align:center;
+}
